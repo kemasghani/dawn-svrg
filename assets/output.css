@@ -633,16 +633,29 @@ b,
   isolation: isolate;
 }
 
-.m-auto {
-  margin: auto;
+.mx-6 {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
-.\!m-auto {
-  margin: auto !important;
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -661,6 +674,34 @@ b,
   display: none;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-7 {
+  width: 1.75rem;
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -671,24 +712,37 @@ b,
   white-space: nowrap;
 }
 
-.font-\[\] {
-  font-family: ;
+.border {
+  border-width: 1px;
+}
+
+.border-\[\#5aaaa6\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(90 170 166 / var(--tw-border-opacity));
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-\[18px\] {
   font-size: 18px;
 }
 
-.\!text-\[18px\] {
-  font-size: 18px !important;
-}
-
 .font-\[400\] {
   font-weight: 400;
-}
-
-.\!font-\[400\] {
-  font-weight: 400 !important;
 }
 
 .uppercase {
@@ -703,13 +757,9 @@ b,
   font-style: italic;
 }
 
-.text-\[\] {
-  color: ;
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+.\!text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 
 .shadow {
@@ -732,4 +782,12 @@ b,
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }

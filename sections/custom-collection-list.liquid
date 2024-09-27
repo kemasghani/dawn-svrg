@@ -9,10 +9,10 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
-  }
+}
 {%- endstyle -%}
 <div id="collection-list-section" class="section-{{ section.id }}-padding">
-    <div class="collection-list-wrapper border">
+    <div class="collection-list-wrapper">
       <div class="collection-list-grid">
         {% for block in section.blocks %}
           {% if block.type == 'collection_block' and block.settings.collection != blank %}
@@ -31,7 +31,7 @@
       .collection-list-wrapper {
         max-width: var(--page-width);
         margin: auto;
-        padding: 20px;
+        padding: 20px 60px;
       }
       .collection-list-grid {
        display: flex;
