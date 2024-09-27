@@ -20,6 +20,8 @@
                   {%- if link.child_active %}
                     class="header__active-menu-item"
                   {% endif %}
+                  class="font-[400] text-[18px] !text-white"
+style="color:white;"
                 >
                   {{- link.title | escape -}}
                 </span>
@@ -50,7 +52,7 @@
                           id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
                           class="header__menu-item link link--text list-menu__item focus-inset caption-large"
                         >
-                          <span>{{ childlink.title | escape }}</span>
+                          <span class="font-[400] text-[18px]">{{ childlink.title | escape }}</span>
                           {{- 'icon-caret.svg' | inline_asset_content -}}
                         </summary>
                         <ul
@@ -90,8 +92,10 @@
           >
             <span
               {%- if link.current %}
-                class="header__active-menu-item"
+                class="header__active-menu-item font-[400] text-[18px] !text-white"
               {% endif %}
+class="font-[400] text-[18px] !text-white"
+style="color:white;"
             >
               {{- link.title | escape -}}
             </span>

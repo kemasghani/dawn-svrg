@@ -1,0 +1,47 @@
+<!-- custom-fullwidth-video.liquid -->
+<section id="fullwidth-video-section">
+    <div class="fullwidth-video-wrapper">
+      {% if section.settings.video != blank %}
+        <video src="{{ section.settings.video.sources[1].url }}" style="width: 100%;" loop muted autoplay></video>
+      {% else %}
+        <p>No video uploaded yet.</p>
+      {% endif %}
+    </div>
+
+    <style>
+      #fullwidth-video-section {
+        width: 100vw;
+      }
+
+      .fullwidth-video-wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      .fullwidth-video {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    </style>
+  </section>
+
+  {% schema %}
+  {
+    "name": "Full Width Video Section",
+    "settings": [
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Upload Video"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Full Width Video",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}

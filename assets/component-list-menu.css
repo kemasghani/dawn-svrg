@@ -1,6 +1,14 @@
 .list-menu--right {
   right: 0;
 }
+.sosmed-icon-container{
+  display: flex;
+  column-gap: 5px;
+}
+.sosmed-icon {
+  width: 15px;
+  display: flex;
+}
 
 .list-menu--disclosure {
   position: absolute;
